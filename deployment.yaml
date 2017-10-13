@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: [YOUR NAME]
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: [YOUR NAME]
+    spec:
+      containers:
+      - name: api
+        image: [DOCKER HUB ACCOUNT]/[IMAGE NAME]:[VERSION or 'latest']
+        ports:
+        - name: api
+          containerPort: [YOUR APP'S PORT]
