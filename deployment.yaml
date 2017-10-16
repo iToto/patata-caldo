@@ -1,17 +1,17 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: [YOUR NAME]
+  name: itoto
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: [YOUR NAME]
+        app: itoto
     spec:
       containers:
       - name: api
-        image: [DOCKER HUB ACCOUNT]/[IMAGE NAME]:[VERSION or 'latest']
+        image: itoto/patata-caldo:latest
         ports:
         - name: api
-          containerPort: [YOUR APP'S PORT]
+          containerPort: 8080
