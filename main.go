@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/gorilla/mux"
 )
@@ -22,7 +23,7 @@ type Entry struct {
 }
 
 func main() {
-	port := "8080"
+	port := os.Getenv("PORT")
 
 	if port == "" {
 		log.Fatal("$PORT environment variable must be set")
