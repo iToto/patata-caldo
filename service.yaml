@@ -4,7 +4,8 @@ metadata:
   name: itoto
 spec:
   selector:
-    app: itoto
+    app: patata-caldo
   ports:
     - port: 80  # Keep this port, so people can reach you through http://[your name]/process
-      targetPort: [put the port of your app here]
+      targetPort: 9999
+  type: LoadBalancer

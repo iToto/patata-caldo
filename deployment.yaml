@@ -7,11 +7,11 @@ spec:
   template:
     metadata:
       labels:
-        app: itoto
+        app: patata-caldo
     spec:
       containers:
       - name: api
         image: itoto/patata-caldo:latest
         ports:
         - name: api
-          containerPort: 8080
+          containerPort: 9999
